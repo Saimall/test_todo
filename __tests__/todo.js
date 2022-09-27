@@ -1,5 +1,13 @@
 /* eslint-disable no-undef */
 const todoList = require("../todo");
+var dateToday = new Date();
+const today = formattedDate(dateToday);
+const yesterday = formattedDate(
+  new Date(new Date().setDate(dateToday.getDate() - 1))
+);
+const tomorrow = formattedDate(
+  new Date(new Date().setDate(dateToday.getDate() + 1))
+);
 const {
   all,
   markAsComplete,
@@ -7,9 +15,6 @@ const {
   overdue,
   dueToday,
   dueLater,
-  today,
-  tomorrow,
-  yesterday,
 } = todoList();
 
 describe("todolist test seats ", () => {
