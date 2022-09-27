@@ -46,9 +46,6 @@ const todoList = () => {
     toDisplayableList,
   };
 };
-const formattedDate = (d) => {
-  return d.toISOString().split("T")[0];
-};
 // ####################################### #
 // DO NOT CHANGE ANYTHING BELOW THIS LINE. #
 // ####################################### #
