@@ -1,5 +1,8 @@
 /* eslint-disable no-undef */
 const todoList = require("../todo");
+const formattedDate = (d)=>{
+    return d.toISOString().split("T")[0];
+};
 var dateToday = new Date();
 const today = formattedDate(dateToday);
 const yesterday = formattedDate(
